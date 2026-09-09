@@ -1,0 +1,7 @@
+--- src/utils/generatePatrolCardJpg.ts
++++ src/utils/generatePatrolCardJpg.ts
+@@ -282,3 +282,3 @@
+ 
+-export async function generatePatrolCardJpg(
++export async function generatePatrolCardJpg_backup(
+   record: PatrolRecord,

@@ -1,0 +1,6 @@
+{
+  "name": "SiPatroli DCKTRP Cakung",
+  "description": "Aplikasi Pengisian Data Realtime & Laporan Patroli Teritorial Pengawasan Dinas Cipta Karya, Tata Ruang dan Pertanahan Kecamatan Cakung",
+  "requestFramePermissions": ["geolocation", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

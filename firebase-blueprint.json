@@ -1,0 +1,85 @@
+{
+  "collections": {
+    "patrolRecords": {
+      "fields": {
+        "userId": {
+          "type": "string",
+          "description": "User ID of the patrol officer"
+        },
+        "lokasi": {
+          "type": "string"
+        },
+        "tanggal": {
+          "type": "string"
+        },
+        "waktu": {
+          "type": "string"
+        },
+        "namaPetugas": {
+          "type": "string"
+        },
+        "regu": {
+          "type": "string"
+        },
+        "radiusMeters": {
+          "type": "number"
+        },
+        "latitude": {
+          "type": "number"
+        },
+        "longitude": {
+          "type": "number"
+        },
+        "temuan": {
+          "type": "array"
+        },
+        "status": {
+          "type": "string"
+        },
+        "keterangan": {
+          "type": "string"
+        },
+        "statusKeamanan": {
+          "type": "string"
+        },
+        "fotoUrl": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "timestamp"
+        }
+      },
+      "rules": [
+        {
+          "allow": "read, write",
+          "condition": "request.auth != null"
+        }
+      ]
+    },
+    "settings": {
+      "fields": {
+        "userId": {
+          "type": "string"
+        },
+        "namaInstansi": {
+          "type": "string"
+        },
+        "alamatInstansi": {
+          "type": "string"
+        },
+        "logoUrl": {
+          "type": "string"
+        }
+      },
+      "rules": [
+        {
+          "allow": "read, write",
+          "condition": "request.auth != null"
+        }
+      ]
+    }
+  },
+  "roles": {
+    "user": "Authenticated user who can create and view records"
+  }
+}
